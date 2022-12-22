@@ -1,0 +1,65 @@
+nav {
+  width: 50%;
+  z-index: 10;
+  position: fixed;
+  background-color: #f6fd2f;
+}
+nav .burger-btn {
+  width: 28px;
+  height: 22px;
+  position: relative;
+  transition: 0.3s all linear;
+  z-index: 6;
+  cursor: pointer;
+}
+nav .burger-btn span {
+  position: absolute;
+  top: 9px;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+}
+nav .burger-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 28px;
+  height: 3.5px;
+  background-color: black;
+}
+nav .burger-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+}
+nav .menu {
+  display: grid;
+  z-index: 5;
+  transform: translateX(-100%);
+  justify-items: center;
+  z-index: 5;
+  transition: 0.5s all linear;
+}
+nav .active {
+  transform: translateX(0);
+}
+nav .active h2 {
+  display: grid;
+  justify-content: center;
+  padding: 10px 0px 30px 0px;
+  border-bottom: solid 1px black;
+  width: 100%;
+}
+nav .active .content {
+  display: grid;
+  grid-template: rows;
+  justify-items: center;
+}
+nav .active .content a {
+  color: #232323;
+  font-size: 22px;
+  padding: 20px;
+}/*# sourceMappingURL=Burger-menu.css.map */

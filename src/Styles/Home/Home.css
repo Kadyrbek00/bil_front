@@ -1,7 +1,5 @@
 .main_home .container {
-  padding: 70px 20px 20px 20px;
-  background-color: #f9f744;
-  background-image: linear-gradient(0deg, #f9f744 15%, #2a2828 0%);
   background-color: #f9e200;
   background-image: linear-gradient(140deg, #f9e200 48%, #00ccfc 0%);
+  padding-top: 70px;
 }/*# sourceMappingURL=Home.css.map */
