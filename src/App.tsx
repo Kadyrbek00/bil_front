@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
@@ -10,10 +10,15 @@ import Specialists from "./Components/Specialists";
 import BurgerMenu from "./Components/Burger-menu";
 
 function App() {
+  const [menuActive, setMenuActive] = useState(false)
+
   return (
     <div className="App">
-      {/* <Nav /> */}
-      <BurgerMenu />
+      <div className={menuActive ? "burger-btn active" : "burger-btn"} onClick={() => setMenuActive(!menuActive)}>
+        <span />
+      </div>
+      <Nav />
+      <BurgerMenu menuActive={menuActive} />
       <div className="components">
         <Routes>
           <Route path="/home" index element={<Home />} />

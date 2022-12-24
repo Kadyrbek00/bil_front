@@ -10,6 +10,11 @@
           backdrop-filter: blur(2px);
   z-index: 2;
 }
+@media (max-width: 600px) {
+  .main_header {
+    display: none;
+  }
+}
 .main_header section {
   display: grid;
   justify-self: start;

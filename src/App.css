@@ -6,3 +6,58 @@
     text-decoration: none;
     user-select: none;
 }
+
+@media (max-width: 600px) {
+    .burger-btn {
+        margin: 15px;
+        width: 33px;
+        height: 21.7px;
+        position: fixed;
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .burger-btn span {
+        position: absolute;
+        top: 9px;
+        width: 33px;
+        height: 4px;
+        background-color: black;
+    }
+
+    .burger-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 33px;
+        height: 4px;
+        background-color: black;
+        transition: 0.4s all linear;
+    }
+
+    .burger-btn::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 33px;
+        height: 4px;
+        background-color: black;
+        transition: 0.4s all linear;
+    }
+
+    .active::before {
+        transform: rotate(-45deg) translate(0px, 12.4px);
+        transition: 0.5s all linear;
+
+    }
+
+    .active::after {
+        transform: rotate(45deg) translate(0px, -12.4px);
+        transition: 0.5s all linear;
+    }
+
+    .active span {
+        display: none;
+    }
+}
