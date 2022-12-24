@@ -9,7 +9,7 @@ function BurgerMenu({ menuActive }: any) {
         <nav className={menuActive ? "menu active" : "menu"}>
             <h2>Bil KG</h2>
             <section>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/home"}>Home</NavLink>
                 <NavLink to={"/specialists"}>Specialists</NavLink>
                 <NavLink to={"/meeting"}>Meeting</NavLink>
                 <NavLink to={"/contacts"}>Contacts</NavLink>
